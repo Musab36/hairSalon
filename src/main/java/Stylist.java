@@ -6,11 +6,13 @@ public class Stylist {
     private String name;
     private String description;
     private int id;
+    private List<Stylist> mStylist;
       
     // Stylist constructor
       public Stylist(String name, String description) {
           this.name = name;
           this.description = description;
+          mStylist = new ArrayList<Stylist>();
       }
  
       public String getName() {
@@ -24,6 +26,10 @@ public class Stylist {
       public int getId() {
           return id;
       }
+    
+      public void addClient(Stylist stylist) {
+      mStylist.add(stylist);
+    }
 
       @Override
       public boolean equals(Object otherStylist){
