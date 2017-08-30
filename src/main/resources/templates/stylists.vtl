@@ -2,6 +2,7 @@
 <ul>
   #foreach ($stylist in $stylists)
     <li><a href="/stylists/$stylist.getId()">$stylist.getName()</a></li>
+    <p>Description: $stylist.getDescription()</p>
   #end
 </ul>
 <a href="/stylists/new">Add New Stylist</a>
