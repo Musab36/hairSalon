@@ -51,25 +51,6 @@ public class App {
         return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    post("/clients", (request, response) -> {
-        Map<String, Object> model = new HashMap<String, Object>();
-        ArrayList<Client> clients = request.session().attribute("clients");
-        if (clients == null) {
-            clients = new ArrayList<Client>(); 
-            request.session().attribute("clientss", clients);
-        }
-
-        String name = request.queryParams("name");
-        String description = request.queryParams("description");
-        Client newClient = new Client(name, 45);
-        request.session().attribute("client", "newClient");
-        clients.add(newClient);
-
-
-        model.put("template", "templates/success.vtl");
-        return new ModelAndView(model, layout);
-    }, new VelocityTemplateEngine());
-
     // Stylist creation
 
     get("/stylists/new", (request, response) -> {
