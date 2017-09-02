@@ -1,0 +1,29 @@
+body {
+    background-color: #333;
+}
+
+.well {
+    background-color: black;
+    color: yellow;
+}
+
+.inputs {
+    color: black;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: cyan;
+    color: black;
+}
+
+.btn:hover {
+    color: black;
+}
+
+select {
+    width: 100px;
+    color: black;
+    border-radius: 3px;
+}

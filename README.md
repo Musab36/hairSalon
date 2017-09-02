@@ -8,7 +8,7 @@ This project is called Hair Salon
 Hair Salon allows you to add Stylists and add Clients to your Stylists. You can also add details to your Stylists.
 
 # Project Installation
-Feel free to clone my project! Just run **gradle run** from your terminal in the root of the project folder.
+Feel free to clone my project! Just run **gradle build** from your terminal in the root of the project folder.
 
 # Liecence
 This project is copy right free
